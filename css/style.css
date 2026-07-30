@@ -1,3 +1,22 @@
+:root{
+    --color-primario: #0d6e5e;      
+    --color-primario-claro: #14a892; 
+    --color-secundario: #1b3a3a;    
+    --color-fondo-suave: #f4f9f8;   
+
+    --bs-primary: var(--color-primario);
+    --bs-primary-rgb: 13, 110, 94;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--color-primario);
+    --bs-btn-border-color: var(--color-primario);
+    --bs-btn-hover-bg: var(--color-primario-claro);
+    --bs-btn-hover-border-color: var(--color-primario-claro);
+    --bs-btn-active-bg: var(--color-primario-claro);
+    --bs-btn-active-border-color: var(--color-primario-claro);
+}
+
 .card-img-top {
     height: 200px;
     object-fit: contain;
@@ -5,4 +24,52 @@
 }
 .profile-image {
     max-width: 220px;
+}
+
+.navbar-brand {
+    color: var(--color-primario);
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-secundario);
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-primario);
+}
+
+
+.navbar {
+    border-bottom: 2px solid var(--color-primario);
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 3rem 0;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: var(--color-primario-claro);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
