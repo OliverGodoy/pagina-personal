@@ -40,34 +40,81 @@
 
     <main>
         <section class="hero">
-            <h1>Oliver Isaac Godoy Salguero</h1>
-            <p>Estudiante de Ingeniería en Sistemas, actualmente cursando el octavo semestre.</p>
-            <img src="imgs/profile.jpg" alt="Foto de perfil" class="profile-image" height="200" width="200">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="imgs/profile.jpg" alt="Foto de perfil" class="profile-image img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8 text-center text-md-start">
+                    <h1>Oliver Isaac Godoy Salguero</h1>
+                    <p>Estudiante de Ingeniería en Sistemas, actualmente cursando el octavo semestre.</p>
+                     <section class="about">
+                        <h2>Sobre mí</h2>
+                        <p>Soy un desarrollador web apasionado por la tecnología y la innovación. Me especializo en crear soluciones web eficientes y atractivas. Me interesa especialmente el desarrollo frontend y estoy aprendiendo a integrar frameworks modernos como Bootstrap en mis proyectos.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
         </section>
 
-        <section class="about">
-            <h2>Sobre mí</h2>
-            <p>Soy un desarrollador web apasionado por la tecnología y la innovación. Me especializo en crear soluciones web eficientes y atractivas. Me interesa especialmente el desarrollo frontend y estoy aprendiendo a integrar frameworks modernos como Bootstrap en mis proyectos.</p>
-        </section>
+       
 
-        <section class="skills">
+       <section class="skills">
+            <div class="container">
             <h2>Habilidades</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>Git y GitHub</li>
-            </ul>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill bg-primary">HTML5</span>
+                    <span class="badge rounded-pill bg-primary">CSS3</span>
+                    <span class="badge rounded-pill bg-primary">JavaScript</span>
+                    <span class="badge rounded-pill bg-primary">SQL</span>
+                    <span class="badge rounded-pill bg-primary">Git y GitHub</span>
+                </div>
+            </div>
         </section>
 
         <section class="projects" id="projects">
+        <div class="container">
             <h2>Proyectos Destacados</h2>
-            <ul>
-                <li><a href="project1.html">Proyecto 1</a></li>
-                <li><a href="project2.html">Proyecto 2</a></li>
-                <li><a href="project3.html">Proyecto 3</a></li>
-            </ul>
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="imgs/proyecto1.png" class="card-img-top" alt="Captura del Proyecto 1">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Proyecto 1</h3>
+                            <p class="card-text">Compilador personalizado basado en ANTLR.</p>
+                            <a href="https://github.com/OliverGodoy/VillageCode" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto align-self-start">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="imgs/proyecto2.png" class="card-img-top" alt="Captura del Proyecto 2">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Proyecto 2</h3>
+                            <p class="card-text">Simulador del algoritmo de planificación Round Robin, desarrollado como extensión/herramienta para visualizar la ejecución de procesos en sistemas operativos.</p>
+                            <a href="https://github.com/OliverGodoy/RoundRobinVsCode" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto align-self-start">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="imgs/proyecto3.png" class="card-img-top" alt="Captura del Proyecto 3">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Proyecto 3</h3>
+                            <p class="card-text">Sistema de gestión de turnos de atención al cliente, permitiendo organizar solicitudes y optimizar tiempos de espera.</p>
+                            <a href="https://github.com/OliverGodoy/SistemaDeAtenci-nConTurnos" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto align-self-start">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         </section>
 
         <section class="vision">
